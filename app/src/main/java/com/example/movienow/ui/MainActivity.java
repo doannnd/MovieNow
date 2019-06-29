@@ -1,8 +1,10 @@
-package com.example.movienow;
+package com.example.movienow.ui;
 
 import android.os.Bundle;
 
 import androidx.appcompat.app.AppCompatActivity;
+
+import com.example.movienow.R;
 
 public class MainActivity extends AppCompatActivity {
 
