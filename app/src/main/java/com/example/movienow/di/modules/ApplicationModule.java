@@ -7,6 +7,7 @@ import com.example.movienow.data.DataManager;
 import com.example.movienow.data.remote.MovieService;
 import com.example.movienow.di.ApplicationContext;
 import com.example.movienow.utils.Constants;
+import com.facebook.stetho.okhttp3.StethoInterceptor;
 
 import javax.inject.Singleton;
 
@@ -52,6 +53,7 @@ public class ApplicationModule {
     OkHttpClient provideOkHttpClient(HttpLoggingInterceptor interceptor) {
         return new OkHttpClient.Builder()
                 .addInterceptor(interceptor)
+                .addNetworkInterceptor(new StethoInterceptor())
                 .build();
     }
 
