@@ -31,11 +31,14 @@ public abstract class BaseActivity extends AppCompatActivity {
         context = this;
 
         setupComponent();
+        attachView();
         initDatas();
         configViews();
     }
 
     protected abstract int getLayoutId();
+
+    protected abstract void attachView();
 
     protected abstract void initDatas();
 

@@ -2,6 +2,7 @@ package com.example.movienow.di.components;
 
 import com.example.movienow.di.PerActivity;
 import com.example.movienow.di.modules.ActivityModule;
+import com.example.movienow.ui.list.activity.MovieListActivity;
 
 import dagger.Component;
 
@@ -17,5 +18,5 @@ import dagger.Component;
         ActivityModule.class
 })
 public interface ActivityComponent {
-
+    MovieListActivity inject(MovieListActivity movieListActivity);
 }
