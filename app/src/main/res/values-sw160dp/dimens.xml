@@ -1,3 +1,17 @@
 <?xml version="1.0" encoding="utf-8"?>
 <resources>
+	<dimen name="space_1">0.44dp</dimen>
+	<dimen name="space_10">4.44dp</dimen>
+	<dimen name="space_20">8.89dp</dimen>
+	<dimen name="text_size_12">5.33sp</dimen>
+	<dimen name="text_size_14">6.22sp</dimen>
+	<dimen name="text_size_16">7.11sp</dimen>
+	<dimen name="text_size_18">8.00sp</dimen>
+	<dimen name="text_size_20">8.89sp</dimen>
+	<dimen name="text_size_22">9.78sp</dimen>
+	<dimen name="text_size_24">10.67sp</dimen>
+	<dimen name="text_size_26">11.56sp</dimen>
+	<dimen name="text_size_28">12.44sp</dimen>
+	<dimen name="text_size_30">13.33sp</dimen>
+	<dimen name="text_size_32">14.22sp</dimen>
 </resources>
