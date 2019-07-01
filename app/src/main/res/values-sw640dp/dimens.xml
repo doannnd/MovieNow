@@ -3,6 +3,7 @@
 	<dimen name="space_1">1.78dp</dimen>
 	<dimen name="space_10">17.78dp</dimen>
 	<dimen name="space_20">35.56dp</dimen>
+	<dimen name="space_4">7.11dp</dimen>
 	<dimen name="text_size_12">21.33sp</dimen>
 	<dimen name="text_size_14">24.89sp</dimen>
 	<dimen name="text_size_16">28.44sp</dimen>

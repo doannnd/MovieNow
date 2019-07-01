@@ -50,6 +50,10 @@
         1.0dp
     </dimen>
 
+    <dimen name="space_4">
+        4.0dp
+    </dimen>
+
     <dimen name="space_10">
         10.0dp
     </dimen>
