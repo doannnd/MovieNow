@@ -72,4 +72,6 @@ dependencies {
 
     // Recycler View
     implementation 'com.github.CymChad:BaseRecyclerViewAdapterHelper:2.9.46'
+
+
 }

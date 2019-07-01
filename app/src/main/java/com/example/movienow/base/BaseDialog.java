@@ -1,4 +1,6 @@
 package com.example.movienow.base;
 
-public class BaseDialog {
+import android.app.Dialog;
+
+public class BaseDialog extends Dialog {
 }
