@@ -2,9 +2,6 @@ package com.example.movienow.base;
 
 import android.content.Context;
 import android.os.Bundle;
-import android.os.PersistableBundle;
-
-import androidx.appcompat.app.AppCompatActivity;
 
 import com.example.movienow.MovieNowApplication;
 import com.example.movienow.di.components.ActivityComponent;
@@ -14,7 +11,7 @@ import com.example.movienow.di.modules.ActivityModule;
 import butterknife.ButterKnife;
 import butterknife.Unbinder;
 
-public abstract class BaseActivity extends AppCompatActivity {
+public abstract class BaseActivity extends RxActivity {
 
     protected String TAG = getClass().getName();
     protected Context context;
