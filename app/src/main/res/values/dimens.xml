@@ -70,4 +70,8 @@
         20.0dp
     </dimen>
 
+    <dimen name="space_250">
+        250.0dp
+    </dimen>
+
 </resources>

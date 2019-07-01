@@ -1,3 +1,4 @@
 <resources>
     <string name="app_name">MovieNow</string>
+    <string name="iv_poster">poster</string>
 </resources>
