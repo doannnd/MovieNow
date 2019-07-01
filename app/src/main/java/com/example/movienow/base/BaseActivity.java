@@ -14,7 +14,7 @@ import com.example.movienow.di.modules.ActivityModule;
 import butterknife.ButterKnife;
 import butterknife.Unbinder;
 
-public abstract class BaseActivity extends AppCompatActivity {
+public abstract class BaseActivity extends AppCompatActivity implements MvpView{
 
     protected String TAG = getClass().getName();
     protected Context context;
