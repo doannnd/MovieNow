@@ -3,6 +3,12 @@ package com.example.movienow.base;
 import io.reactivex.disposables.CompositeDisposable;
 import io.reactivex.disposables.Disposable;
 
+/**
+ * doannd
+ *
+ * base rx presenter
+ * @param <T> view
+ */
 public class RxPresenter<T extends BaseContract.BaseView> implements BaseContract.BasePresenter<T> {
 
     protected T view;

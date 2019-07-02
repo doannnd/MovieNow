@@ -2,6 +2,11 @@ package com.example.movienow.ui.list.fragment;
 
 import com.example.movienow.base.BaseFragment;
 
+/**
+ * doannd
+ *
+ * movie list fragment
+ */
 public class MovieListFragment extends BaseFragment {
     @Override
     protected void setupComponent() {

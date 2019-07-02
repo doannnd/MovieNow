@@ -19,7 +19,7 @@
             android:background="@color/gray300"
             android:scaleType="centerCrop"
             android:contentDescription="@string/iv_poster"
-            tools:src="@tools:sample/avatars" />
+            tools:src="@tools:sample/backgrounds/scenic[2]" />
 
         <TextView
             android:id="@+id/tv_title"

@@ -12,6 +12,7 @@ android {
         targetSdkVersion 29
         versionCode 1
         versionName "1.0"
+        multiDexEnabled true
         testInstrumentationRunner "androidx.test.runner.AndroidJUnitRunner"
     }
     buildTypes {
@@ -23,6 +24,11 @@ android {
         buildTypes.each {
             it.buildConfigField("String", "API_KEY", "\"" + API_KEY + "\"")
         }
+    }
+
+    compileOptions {
+        sourceCompatibility JavaVersion.VERSION_1_8
+        targetCompatibility JavaVersion.VERSION_1_8
     }
 }
 
@@ -72,15 +78,18 @@ dependencies {
     implementation 'com.google.dagger:dagger:2.7'
     annotationProcessor 'com.google.dagger:dagger-compiler:2.7'
 
-    // Butter Knife
-    implementation 'com.jakewharton:butterknife:8.8.1'
-    annotationProcessor 'com.jakewharton:butterknife-compiler:8.8.1'
+    // Butter Knife support android x
+    implementation 'com.jakewharton:butterknife:10.1.0'
+    annotationProcessor 'com.jakewharton:butterknife-compiler:10.1.0'
 
     // Recycler View
     implementation 'com.github.CymChad:BaseRecyclerViewAdapterHelper:2.9.46'
 
-    // Smart refresh layout
+    // Smart refresh layout support android x
     implementation 'com.scwang.smartrefresh:SmartRefreshLayout:1.1.0-andx-11'
     implementation 'com.scwang.smartrefresh:SmartRefreshHeader:1.1.0-andx-11'
     implementation 'androidx.legacy:legacy-support-v4:1.0.0'
+
+    // multidex < android 5.0
+    implementation 'androidx.multidex:multidex:2.0.1'
 }

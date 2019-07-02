@@ -17,6 +17,11 @@ import com.trello.rxlifecycle2.android.RxLifecycleAndroid;
 import io.reactivex.Observable;
 import io.reactivex.subjects.BehaviorSubject;
 
+/**
+ * doannd
+ *
+ * base rx fragment with life cycle provider
+ */
 public class RxFragment extends Fragment implements LifecycleProvider<FragmentEvent> {
     private final BehaviorSubject<FragmentEvent> lifecycleSubject = BehaviorSubject.create();
 
