@@ -12,6 +12,7 @@ import androidx.fragment.app.FragmentTransaction;
 import com.example.movienow.R;
 import com.example.movienow.base.BaseActivity;
 import com.example.movienow.ui.list.fragment.MovieListFragment;
+import com.example.movienow.ui.search.activity.SearchActivity;
 import com.google.android.material.appbar.AppBarLayout;
 
 import butterknife.BindView;
@@ -68,7 +69,7 @@ public class MovieListActivity extends BaseActivity {
     @Override
     public boolean onOptionsItemSelected(@NonNull MenuItem item) {
         if (item.getItemId() == R.id.action_search) {
-
+            SearchActivity.startActivity(this);
         }
         return super.onOptionsItemSelected(item);
     }
