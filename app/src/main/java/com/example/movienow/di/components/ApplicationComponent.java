@@ -29,5 +29,5 @@ public interface ApplicationComponent {
 
     Application application();
 
-   /* DataManager getDataManager();*/
+    DataManager getDataManager();
 }

@@ -6,8 +6,14 @@ import android.content.Context;
 import com.example.movienow.di.components.ApplicationComponent;
 import com.example.movienow.di.components.DaggerApplicationComponent;
 import com.example.movienow.di.modules.ApplicationModule;
+import com.example.movienow.utils.logger.ReleaseTree;
 import com.facebook.stetho.Stetho;
+import com.orhanobut.logger.Logger;
 import com.squareup.leakcanary.LeakCanary;
+
+import org.jetbrains.annotations.NotNull;
+
+import timber.log.Timber;
 
 /**
  * doannd
@@ -32,8 +38,10 @@ public class MovieNowApplication extends Application {
         if (BuildConfig.DEBUG) {
             setupLeakCanary();
             setupStetho();
+            setupLogger();
+        } else {
+            Timber.plant(new ReleaseTree());
         }
-
 
         setupComponent();
     }
@@ -69,6 +77,20 @@ public class MovieNowApplication extends Application {
                 .applicationModule(new ApplicationModule(this))
                 .build();
         applicationComponent.inject(this);
+    }
+
+    /**
+     * setup log with logger and timer
+     * github logger: https://github.com/orhanobut/logger : 2.2.0
+     * github timber: https://github.com/JakeWharton/timber : 4.7.1
+     */
+    private void setupLogger() {
+        Timber.plant(new Timber.DebugTree(){
+            @Override
+            protected void log(int priority, String tag, @NotNull String message, Throwable t) {
+                Logger.log(priority, tag, message, t);
+            }
+        });
     }
 
     public ApplicationComponent getComponent() {

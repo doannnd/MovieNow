@@ -78,18 +78,24 @@ dependencies {
     implementation 'com.google.dagger:dagger:2.7'
     annotationProcessor 'com.google.dagger:dagger-compiler:2.7'
 
-    // Butter Knife support android x
+    // Butter Knife support
     implementation 'com.jakewharton:butterknife:10.1.0'
     annotationProcessor 'com.jakewharton:butterknife-compiler:10.1.0'
 
-    // Recycler View
+    // Base Recycler View
     implementation 'com.github.CymChad:BaseRecyclerViewAdapterHelper:2.9.46'
 
-    // Smart refresh layout support android x
+    // Smart refresh layout
     implementation 'com.scwang.smartrefresh:SmartRefreshLayout:1.1.0-andx-11'
     implementation 'com.scwang.smartrefresh:SmartRefreshHeader:1.1.0-andx-11'
     implementation 'androidx.legacy:legacy-support-v4:1.0.0'
 
     // multidex < android 5.0
     implementation 'androidx.multidex:multidex:2.0.1'
+
+    // logger
+    implementation 'com.orhanobut:logger:2.2.0'
+
+    // timber
+    implementation 'com.jakewharton.timber:timber:4.7.1'
 }

@@ -1,16 +1,20 @@
 package com.example.movienow.ui.list.activity;
 
-import android.os.Bundle;
+import android.view.Menu;
+import android.view.MenuItem;
 import android.widget.FrameLayout;
 
+import androidx.annotation.NonNull;
 import androidx.appcompat.widget.Toolbar;
+import androidx.fragment.app.FragmentManager;
+import androidx.fragment.app.FragmentTransaction;
 
 import com.example.movienow.R;
 import com.example.movienow.base.BaseActivity;
+import com.example.movienow.ui.list.fragment.MovieListFragment;
 import com.google.android.material.appbar.AppBarLayout;
 
 import butterknife.BindView;
-import butterknife.ButterKnife;
 
 /**
  * @author doannd
@@ -24,6 +28,8 @@ public class MovieListActivity extends BaseActivity {
     AppBarLayout appBarLayout;
     @BindView(R.id.container)
     FrameLayout container;
+    @BindView(R.id.common_toolbar)
+    Toolbar toolbar;
 
     @Override
     protected int getLayoutId() {
@@ -32,17 +38,20 @@ public class MovieListActivity extends BaseActivity {
 
     @Override
     protected void attachView() {
-
     }
 
     @Override
     protected void initDatas() {
-
+        MovieListFragment movieListFragment = new MovieListFragment();
+        FragmentManager manager = getSupportFragmentManager();
+        FragmentTransaction transaction = manager.beginTransaction();
+        transaction.replace(R.id.container, movieListFragment);
+        transaction.commit();
     }
 
     @Override
     protected void configViews() {
-
+        setSupportActionBar(toolbar);
     }
 
     @Override
@@ -50,4 +59,23 @@ public class MovieListActivity extends BaseActivity {
         getActivityComponent().inject(this);
     }
 
+    @Override
+    public boolean onCreateOptionsMenu(Menu menu) {
+        getMenuInflater().inflate(R.menu.menu_main, menu);
+        return super.onCreateOptionsMenu(menu);
+    }
+
+    @Override
+    public boolean onOptionsItemSelected(@NonNull MenuItem item) {
+        if (item.getItemId() == R.id.action_search) {
+
+        }
+        return super.onOptionsItemSelected(item);
+    }
+
+    @Override
+    protected void onResume() {
+        super.onResume();
+        appBarLayout.setExpanded(false, true);
+    }
 }
