@@ -7,7 +7,7 @@ import io.reactivex.Observable;
 
 /**
  * doannd
- *
+ * <p>
  * manage data from web services: https://api.themoviedb.org/3/
  */
 

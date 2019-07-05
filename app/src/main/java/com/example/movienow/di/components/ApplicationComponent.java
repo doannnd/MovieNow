@@ -4,18 +4,16 @@ import android.app.Application;
 import android.content.Context;
 
 import com.example.movienow.MovieNowApplication;
-import com.example.movienow.data.DataManager;
 import com.example.movienow.di.ApplicationContext;
 import com.example.movienow.di.modules.ApplicationModule;
 
-import javax.inject.Inject;
 import javax.inject.Singleton;
 
 import dagger.Component;
 
 /**
  * doannd
- *
+ * <p>
  * inject Movie Now Application here
  * get data from services
  */
@@ -31,5 +29,4 @@ public interface ApplicationComponent {
 
     Application application();
 
-    DataManager getDataManager();
 }
