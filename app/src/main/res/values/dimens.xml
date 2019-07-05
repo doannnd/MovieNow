@@ -50,6 +50,14 @@
         1.0dp
     </dimen>
 
+    <dimen name="space_2">
+        2.0dp
+    </dimen>
+
+    <dimen name="space_3">
+        3.0dp
+    </dimen>
+
     <dimen name="space_4">
         4.0dp
     </dimen>
@@ -68,6 +76,30 @@
 
     <dimen name="space_20">
         20.0dp
+    </dimen>
+
+    <dimen name="space_40">
+        40.0dp
+    </dimen>
+
+    <dimen name="space_60">
+        60.0dp
+    </dimen>
+
+    <dimen name="space_50">
+        50.0dp
+    </dimen>
+
+    <dimen name="space_70">
+        70.0dp
+    </dimen>
+
+    <dimen name="space_100">
+        100.0dp
+    </dimen>
+
+    <dimen name="space_200">
+        200.0dp
     </dimen>
 
     <dimen name="space_250">

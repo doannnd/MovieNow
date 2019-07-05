@@ -45,8 +45,8 @@
 
     <ProgressBar
         android:id="@+id/progress_bar"
-        android:layout_width="50dp"
-        android:layout_height="50dp"
+        android:layout_width="@dimen/space_50"
+        android:layout_height="@dimen/space_50"
         android:layout_gravity="center"
         android:visibility="invisible"/>
 
@@ -55,6 +55,6 @@
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
         android:layout_gravity="center"
-        android:textSize="20sp"/>
+        android:textSize="@dimen/text_size_20"/>
 
 </FrameLayout>

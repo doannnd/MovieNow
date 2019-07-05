@@ -7,10 +7,10 @@
 
     <ImageView
         android:id="@+id/cast_image"
-        android:layout_width="50dp"
-        android:layout_height="50dp"
+        android:layout_width="@dimen/space_50"
+        android:layout_height="@dimen/space_50"
         android:layout_gravity="center_vertical"
-        android:layout_margin="8dp"
+        android:layout_margin="@dimen/space_8"
         android:scaleType="centerCrop" />
 
     <LinearLayout
@@ -18,7 +18,7 @@
         android:layout_height="wrap_content"
         android:layout_gravity="center_vertical"
         android:orientation="vertical"
-        android:paddingLeft="72dp">
+        android:paddingLeft="@dimen/space_70">
 
         <TextView
             android:id="@+id/name"
@@ -27,11 +27,11 @@
             android:ellipsize="end"
             android:gravity="center"
             android:maxLines="1"
-            android:paddingTop="4dp"
-            android:paddingRight="8dp"
+            android:paddingTop="@dimen/space_4"
+            android:paddingRight="@dimen/space_8"
             android:text="Name Action"
             android:textColor="@color/materialDarkText"
-            android:textSize="16sp"
+            android:textSize="@dimen/text_size_16"
             android:textStyle="bold" />
 
         <TextView
@@ -41,10 +41,10 @@
             android:ellipsize="end"
             android:gravity="center"
             android:maxLines="1"
-            android:paddingRight="8dp"
-            android:paddingBottom="4dp"
+            android:paddingRight="@dimen/space_8"
+            android:paddingBottom="@dimen/space_4"
             android:text="Charater Action"
-            android:textSize="14sp" />
+            android:textSize="@dimen/text_size_14" />
     </LinearLayout>
 
 </FrameLayout>
