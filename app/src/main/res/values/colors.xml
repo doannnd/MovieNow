@@ -9,5 +9,9 @@
     <color name="black_transparent">#8C000000</color>
     <color name="gray300">#E0E0E0</color>
     <color name="gray50">#7F7F7F</color>
-    <color name="materialDarkText">#212121</color>
+    <color name="materialWhiteText">#B3FFFFFF</color>
+    <color name="materialDarkText">#B3000000</color>
+    <color name="blackTransparent">#8C000000</color>
+    <color name="gray600">#808080</color>
+    <color name="gray100">#F5F5F5</color>
 </resources>

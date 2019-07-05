@@ -94,6 +94,10 @@
         70.0dp
     </dimen>
 
+    <dimen name="space_85">
+        85.0dp
+    </dimen>
+
     <dimen name="space_100">
         100.0dp
     </dimen>
