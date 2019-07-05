@@ -16,7 +16,7 @@
             app:layout_scrollFlags="scroll|snap">
 
             <ImageView
-                android:id="@+id/backdrop"
+                android:id="@+id/iv_backdrop"
                 android:layout_width="match_parent"
                 android:layout_height="@dimen/space_200"
                 android:background="@color/colorPrimary"
@@ -28,14 +28,7 @@
                 android:layout_height="@dimen/space_200"
                 android:background="@drawable/scrim" />
 
-            <android.support.v7.widget.Toolbar
-                android:id="@+id/toolbar"
-                android:layout_width="match_parent"
-                android:layout_height="?attr/actionBarSize"
-                android:background="@android:color/transparent"
-                app:layout_collapseMode="none"
-                app:popupTheme="@style/ThemeOverlay.AppCompat.Light"
-                app:theme="@style/ThemeOverlay.AppCompat.Dark.ActionBar" />
+            <include layout="@layout/common_toolbar" />
 
         </android.support.design.widget.CollapsingToolbarLayout>
 
@@ -57,7 +50,7 @@
                 android:paddingBottom="@dimen/space_8">
 
                 <TextView
-                    android:id="@+id/title"
+                    android:id="@+id/tv_title"
                     style="@style/TextAppearance.AppCompat.Medium"
                     android:layout_width="wrap_content"
                     android:layout_height="wrap_content"
@@ -66,7 +59,7 @@
                     android:textColor="@color/materialWhiteText" />
 
                 <TextView
-                    android:id="@+id/release_date"
+                    android:id="@+id/tv_release_date"
                     style="@style/Base.TextAppearance.AppCompat.Caption"
                     android:layout_width="wrap_content"
                     android:layout_height="wrap_content"
@@ -78,7 +71,7 @@
                     android:textColor="@color/materialWhiteText" />
 
                 <TextView
-                    android:id="@+id/rating"
+                    android:id="@+id/tv_rating"
                     style="@style/Base.TextAppearance.AppCompat.Caption"
                     android:layout_width="wrap_content"
                     android:layout_height="wrap_content"
@@ -90,7 +83,7 @@
             </LinearLayout>
 
             <ImageView
-                android:id="@+id/poster"
+                android:id="@+id/iv_poster"
                 android:layout_width="@dimen/space_70"
                 android:layout_height="@dimen/space_100"
                 android:layout_margin="@dimen/space_8"
@@ -115,7 +108,7 @@
             android:orientation="vertical">
 
             <TextView
-                android:id="@+id/overview"
+                android:id="@+id/tv_overview"
                 style="@style/TextAppearance.AppCompat.Body1"
                 android:layout_width="match_parent"
                 android:layout_height="wrap_content"
@@ -124,7 +117,7 @@
                 android:textSize="@dimen/text_size_16" />
 
             <LinearLayout
-                android:id="@+id/genre_container"
+                android:id="@+id/ll_genre_container"
                 android:layout_width="match_parent"
                 android:layout_height="wrap_content"
                 android:orientation="vertical"
@@ -138,7 +131,7 @@
                     android:text="Genres" />
 
                 <android.support.v7.widget.RecyclerView
-                    android:id="@+id/genre_recycler_view"
+                    android:id="@+id/rv_genre"
                     android:layout_width="match_parent"
                     android:layout_height="wrap_content"
                     android:clipToPadding="false"
@@ -151,7 +144,7 @@
 
 
             <LinearLayout
-                android:id="@+id/cast_container"
+                android:id="@+id/ll_cast_container"
                 android:layout_width="match_parent"
                 android:layout_height="wrap_content"
                 android:orientation="vertical"
@@ -170,7 +163,7 @@
                         android:text="Cast" />
 
                     <Button
-                        android:id="@+id/view_all_cast"
+                        android:id="@+id/bt_view_all_cast"
                         style="?android:attr/borderlessButtonStyle"
                         android:layout_width="wrap_content"
                         android:layout_height="wrap_content"
@@ -192,7 +185,7 @@
                         android:layout_height="wrap_content">
 
                         <android.support.v7.widget.RecyclerView
-                            android:id="@+id/cast_recycler_view"
+                            android:id="@+id/rv_cast"
                             android:layout_width="match_parent"
                             android:layout_height="wrap_content"
                             android:clipToPadding="false"
