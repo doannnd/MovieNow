@@ -8,6 +8,7 @@ import com.example.movienow.data.DataManager;
 import com.example.movienow.di.ApplicationContext;
 import com.example.movienow.di.modules.ApplicationModule;
 
+import javax.inject.Inject;
 import javax.inject.Singleton;
 
 import dagger.Component;
@@ -23,6 +24,7 @@ import dagger.Component;
 @Component(dependencies = {
         ApplicationModule.class
 })
+
 public interface ApplicationComponent {
 
     void inject(MovieNowApplication application);

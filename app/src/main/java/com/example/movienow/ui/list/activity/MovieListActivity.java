@@ -70,8 +70,9 @@ public class MovieListActivity extends BaseActivity {
     public boolean onOptionsItemSelected(@NonNull MenuItem item) {
         if (item.getItemId() == R.id.action_search) {
             SearchActivity.startActivity(this);
+            return super.onOptionsItemSelected(item);
         }
-        return super.onOptionsItemSelected(item);
+        return false;
     }
 
     @Override
