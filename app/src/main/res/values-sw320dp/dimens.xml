@@ -2,8 +2,20 @@
 <resources>
 	<dimen name="space_1">0.89dp</dimen>
 	<dimen name="space_10">8.89dp</dimen>
+	<dimen name="space_100">88.89dp</dimen>
+	<dimen name="space_16">14.22dp</dimen>
+	<dimen name="space_2">1.78dp</dimen>
 	<dimen name="space_20">17.78dp</dimen>
+	<dimen name="space_200">177.78dp</dimen>
+	<dimen name="space_250">222.22dp</dimen>
+	<dimen name="space_3">2.67dp</dimen>
 	<dimen name="space_4">3.56dp</dimen>
+	<dimen name="space_40">35.56dp</dimen>
+	<dimen name="space_50">44.44dp</dimen>
+	<dimen name="space_60">53.33dp</dimen>
+	<dimen name="space_70">62.22dp</dimen>
+	<dimen name="space_8">7.11dp</dimen>
+	<dimen name="space_85">75.56dp</dimen>
 	<dimen name="text_size_12">10.67sp</dimen>
 	<dimen name="text_size_14">12.44sp</dimen>
 	<dimen name="text_size_16">14.22sp</dimen>

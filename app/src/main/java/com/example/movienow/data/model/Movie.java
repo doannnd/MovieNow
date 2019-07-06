@@ -5,7 +5,10 @@ import com.google.gson.annotations.SerializedName;
 
 import java.util.List;
 
-public class Results {
+import lombok.Data;
+
+@Data
+public class Movie {
     @Expose
     @SerializedName("release_date")
     private String releaseDate;

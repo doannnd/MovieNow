@@ -5,11 +5,14 @@ import com.google.gson.annotations.SerializedName;
 
 import java.util.List;
 
+import lombok.Data;
+
+@Data
 public class Response {
 
     @Expose
     @SerializedName("results")
-    private List<Results> results;
+    private List<Movie> results;
     @Expose
     @SerializedName("total_pages")
     private int totalPages;

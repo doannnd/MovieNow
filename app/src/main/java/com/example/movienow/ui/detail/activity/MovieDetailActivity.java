@@ -1,6 +1,5 @@
 package com.example.movienow.ui.detail.activity;
 
-import android.content.Intent;
 import android.view.MenuItem;
 import android.widget.Button;
 import android.widget.FrameLayout;
@@ -9,13 +8,12 @@ import android.widget.LinearLayout;
 import android.widget.TextView;
 
 import androidx.annotation.NonNull;
-import androidx.appcompat.widget.Toolbar;
 import androidx.core.widget.NestedScrollView;
 import androidx.recyclerview.widget.RecyclerView;
 
 import com.example.movienow.R;
 import com.example.movienow.base.BaseActivity;
-import com.example.movienow.data.model.Results;
+import com.example.movienow.data.model.Movie;
 import com.google.android.material.appbar.AppBarLayout;
 import com.google.android.material.appbar.CollapsingToolbarLayout;
 
@@ -23,7 +21,6 @@ import java.util.ArrayList;
 import java.util.List;
 
 import butterknife.BindView;
-import butterknife.OnClick;
 
 /**
  * doannd
@@ -63,7 +60,7 @@ public class MovieDetailActivity extends BaseActivity {
     @BindView(R.id.rv_cast)
     RecyclerView rvCast;
 
-    private List<Results> casts = new ArrayList<>();
+    private List<Movie> casts = new ArrayList<>();
 
     @Override
     protected int getLayoutId() {

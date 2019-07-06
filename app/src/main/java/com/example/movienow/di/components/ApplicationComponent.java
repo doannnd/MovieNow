@@ -4,6 +4,7 @@ import android.app.Application;
 import android.content.Context;
 
 import com.example.movienow.MovieNowApplication;
+import com.example.movienow.data.DataManager;
 import com.example.movienow.di.ApplicationContext;
 import com.example.movienow.di.modules.ApplicationModule;
 
@@ -19,14 +20,15 @@ import dagger.Component;
  */
 
 @Singleton
-@Component(dependencies = {
+@Component(modules = {
         ApplicationModule.class
 })
-
 public interface ApplicationComponent {
 
     void inject(MovieNowApplication application);
 
     Application application();
+
+    DataManager getDataManager();
 
 }

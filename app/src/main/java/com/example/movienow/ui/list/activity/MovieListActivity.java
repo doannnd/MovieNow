@@ -23,12 +23,10 @@ import butterknife.BindView;
  * Movie List Activity
  */
 
-public class MovieListActivity extends BaseActivity {
+public class MovieListActivity extends BaseActivity  {
 
     @BindView(R.id.app_bar_layout)
     AppBarLayout appBarLayout;
-    @BindView(R.id.container)
-    FrameLayout container;
     @BindView(R.id.common_toolbar)
     Toolbar toolbar;
 
@@ -57,7 +55,6 @@ public class MovieListActivity extends BaseActivity {
 
     @Override
     protected void setupComponent() {
-        getActivityComponent().inject(this);
     }
 
     @Override
