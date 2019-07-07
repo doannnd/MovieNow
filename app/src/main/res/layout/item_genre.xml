@@ -14,5 +14,4 @@
     android:paddingLeft="@dimen/space_16"
     android:stateListAnimator="@null"
     android:text="Action"
-    android:textColor="@android:color/white"
-    />
+    android:textColor="@android:color/white" />

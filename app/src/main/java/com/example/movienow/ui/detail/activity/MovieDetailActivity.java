@@ -13,7 +13,7 @@ import androidx.recyclerview.widget.RecyclerView;
 
 import com.example.movienow.R;
 import com.example.movienow.base.BaseActivity;
-import com.example.movienow.data.model.Results;
+import com.example.movienow.data.model.Movie;
 import com.google.android.material.appbar.AppBarLayout;
 import com.google.android.material.appbar.CollapsingToolbarLayout;
 
@@ -60,7 +60,7 @@ public class MovieDetailActivity extends BaseActivity {
     @BindView(R.id.rv_cast)
     RecyclerView rvCast;
 
-    private List<Results> casts = new ArrayList<>();
+    private List<Movie> casts = new ArrayList<>();
 
     @Override
     protected int getLayoutId() {

@@ -1,11 +1,9 @@
 package com.example.movienow.di.modules;
 
 import android.app.Application;
-import android.content.Context;
 
 import com.example.movienow.data.DataManager;
 import com.example.movienow.data.remote.MovieService;
-import com.example.movienow.di.ApplicationContext;
 import com.example.movienow.utils.Constants;
 import com.facebook.stetho.okhttp3.StethoInterceptor;
 
@@ -36,7 +34,7 @@ public class ApplicationModule {
 
     @Provides
     @Singleton
-    public Application provideApplication() {
+     Application provideApplication() {
         return application;
     }
 

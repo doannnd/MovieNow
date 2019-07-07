@@ -3,11 +3,14 @@ package com.example.movienow;
 import android.app.Application;
 import android.content.Context;
 
+import androidx.multidex.MultiDex;
+
 import com.example.movienow.di.components.ApplicationComponent;
 import com.example.movienow.di.components.DaggerApplicationComponent;
 import com.example.movienow.di.modules.ApplicationModule;
 import com.example.movienow.utils.logger.ReleaseTree;
 import com.facebook.stetho.Stetho;
+import com.orhanobut.logger.AndroidLogAdapter;
 import com.orhanobut.logger.Logger;
 import com.squareup.leakcanary.LeakCanary;
 
@@ -26,6 +29,12 @@ public class MovieNowApplication extends Application {
 
     public static MovieNowApplication get(Context context) {
         return (MovieNowApplication) context.getApplicationContext();
+    }
+
+    @Override
+    protected void attachBaseContext(Context base) {
+        super.attachBaseContext(base);
+        MultiDex.install(this);
     }
 
     @Override
@@ -85,6 +94,7 @@ public class MovieNowApplication extends Application {
      * github timber: https://github.com/JakeWharton/timber : 4.7.1
      */
     private void setupLogger() {
+        Logger.addLogAdapter(new AndroidLogAdapter());
         Timber.plant(new Timber.DebugTree(){
             @Override
             protected void log(int priority, String tag, @NotNull String message, Throwable t) {
