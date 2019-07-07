@@ -1,6 +1,5 @@
 package com.example.movienow.ui.detail.activity;
 
-import android.content.Intent;
 import android.view.MenuItem;
 import android.widget.Button;
 import android.widget.FrameLayout;
@@ -9,7 +8,6 @@ import android.widget.LinearLayout;
 import android.widget.TextView;
 
 import androidx.annotation.NonNull;
-import androidx.appcompat.widget.Toolbar;
 import androidx.core.widget.NestedScrollView;
 import androidx.recyclerview.widget.RecyclerView;
 
@@ -23,7 +21,6 @@ import java.util.ArrayList;
 import java.util.List;
 
 import butterknife.BindView;
-import butterknife.OnClick;
 
 /**
  * doannd
