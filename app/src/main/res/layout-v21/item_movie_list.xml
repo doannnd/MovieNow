@@ -30,7 +30,7 @@
             android:paddingStart="@dimen/space_16"
             android:paddingTop="@dimen/space_8"
             android:paddingEnd="@dimen/space_16"
-            android:textColor="@color/white"
+            android:textColor="@color/black"
             tools:text="@tools:sample/full_names" />
 
         <TextView
@@ -42,7 +42,7 @@
             android:paddingStart="@dimen/space_16"
             android:paddingEnd="@dimen/space_16"
             android:paddingBottom="@dimen/space_8"
-            android:textColor="@color/white"
+            android:textColor="@color/black"
             tools:text="@tools:sample/lorem" />
 
     </LinearLayout>

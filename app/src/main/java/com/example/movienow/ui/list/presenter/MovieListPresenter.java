@@ -21,7 +21,7 @@ public class MovieListPresenter extends RxPresenter<MovieListContract.View> impl
     private DataManager dataManager;
 
     @Inject
-    public MovieListPresenter(DataManager dataManager) {
+    MovieListPresenter(DataManager dataManager) {
         this.dataManager = dataManager;
     }
 
