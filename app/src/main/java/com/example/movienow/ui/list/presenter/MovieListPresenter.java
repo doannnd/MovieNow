@@ -16,7 +16,8 @@ import io.reactivex.schedulers.Schedulers;
  *
  * movie list presenter
  */
-public class MovieListPresenter extends RxPresenter<MovieListContract.View> implements MovieListContract.Presenter<MovieListContract.View> {
+public class MovieListPresenter extends RxPresenter<MovieListContract.View>
+        implements MovieListContract.Presenter<MovieListContract.View> {
 
     private DataManager dataManager;
 
